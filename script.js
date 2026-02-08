@@ -24,8 +24,8 @@ const translations = {
         ceremony_title: "Ceremony and Reception",
         ceremony_text: "We expect you at 11:00 AM at:",
         maps_btn: "Open in Google Maps",
-        gift_title: "Our Greatest Gift",
-        gift_text: "Your presence is our most precious gift. <br>If you wish to give us a present, we would be delighted. <br>Your contribution will help us start our life journey together.",
+        gift_title: "Your presence is our most precious gift.",
+        gift_text: "If you wish to give us a present, we would be delighted. <br>Your contribution will help us start our life journey together.",
         copy_btn: "Copy IBAN",
         copied_msg: "Copied!",
         bank_owner: "Account Holders: Fabio Fedeli & Denisa Nuri",
@@ -39,8 +39,8 @@ const translations = {
         ceremony_title: "Ceremonia dhe Pritja",
         ceremony_text: "Ju presim në orën 11:00 në:",
         maps_btn: "Hape në Google Maps",
-        gift_title: "Dhurata jonë më e madhe",
-        gift_text: "Prania juaj është dhurata jonë më e çmuar. <br>Nëse dëshironi të na bëni një dhuratë, do të jemi të lumtur. <br>Kontributi juaj do të na ndihmojë të nisim udhëtimin tonë të jetës së bashku.",
+        gift_title: "Dhurata jonë më e madhe është prania juaj.",
+        gift_text: "Nëse dëshironi të na bëni një dhuratë, do të jemi të lumtur.",
         copy_btn: "Kopjo IBAN",
         copied_msg: "U kopjua!",
         bank_owner: "Mbajtësit e llogarisë: Fabio Fedeli & Denisa Nuri",
@@ -85,3 +85,4 @@ function scrollToContent() {
         element.scrollIntoView({ behavior: 'smooth' });
     }
 }
+
