@@ -78,9 +78,10 @@ function copiaIban() {
     }
 }
 
-// --- FUNZIONE PER SCROLLARE GIÙ (FRECCIA) ---
+// --- FUNZIONE SCROLL FIXATA ---
 function scrollToContent() {
-    document.getElementById("location").scrollIntoView({ 
-        behavior: 'smooth' 
-    });
+    const element = document.getElementById("location");
+    if(element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+    }
 }
