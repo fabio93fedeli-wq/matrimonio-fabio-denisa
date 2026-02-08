@@ -12,6 +12,11 @@
     --font-body: 'Lato', sans-serif;
 }
 
+/* RENDI LO SCORRIMENTO FLUIDO */
+html {
+    scroll-behavior: smooth;
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -54,7 +59,7 @@ header {
 .hero-content {
     position: relative; z-index: 2; color: var(--white); padding: 20px;
     width: 100%;
-    padding-bottom: 60px; /* Spazio extra in basso per sicurezza */
+    padding-bottom: 60px; 
 }
 
 h1 {
@@ -94,15 +99,28 @@ h1 {
     font-style: italic;
 }
 
-/* FRECCIA IN BASSO */
+/* --- FRECCIA CLICCABILE E PIU' GRANDE --- */
 .scroll-indicator {
     position: absolute;
-    bottom: 10px; /* Molto in basso */
+    bottom: 20px; /* Un po' di margine dal bordo */
     left: 50%;
     transform: translateX(-50%);
     animation: bounce 2s infinite;
-    font-size: 2rem;
+    z-index: 10;
+}
+
+.scroll-indicator a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 3.5rem; /* MOLTO PIÙ GRANDE */
     opacity: 0.8;
+    cursor: pointer;
+    display: block; /* Aumenta l'area cliccabile */
+    transition: opacity 0.3s;
+}
+
+.scroll-indicator a:hover {
+    opacity: 1;
 }
 
 /* --- GENERAL SECTIONS --- */
