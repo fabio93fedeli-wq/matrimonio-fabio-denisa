@@ -6,8 +6,7 @@ const translations = {
         intro: "Ci sposiamo",
         save_date: "Save the Date",
         date: "26 Settembre 2026",
-        // AGGIORNATO:
-        ceremony_title: "La Cerimonia e il Ricevimento",
+        ceremony_title: "La Cerimonia e Ricevimento",
         ceremony_text: "Vi aspettiamo alle ore 11:00 presso:",
         maps_btn: "Apri in Google Maps",
         gift_title: "Il nostro regalo più grande",
@@ -22,7 +21,6 @@ const translations = {
         intro: "We are getting married",
         save_date: "Save the Date",
         date: "September 26, 2026",
-        // AGGIORNATO:
         ceremony_title: "Ceremony and Reception",
         ceremony_text: "We expect you at 11:00 AM at:",
         maps_btn: "Open in Google Maps",
@@ -38,7 +36,6 @@ const translations = {
         intro: "Po martohemi",
         save_date: "Save the Date",
         date: "26 Shtator 2026",
-        // AGGIORNATO:
         ceremony_title: "Ceremonia dhe Pritja",
         ceremony_text: "Ju presim në orën 11:00 në:",
         maps_btn: "Hape në Google Maps",
@@ -79,4 +76,11 @@ function copiaIban() {
     } else {
         alert("L'IBAN è: " + ibanText);
     }
+}
+
+// --- FUNZIONE PER SCROLLARE GIÙ (FRECCIA) ---
+function scrollToContent() {
+    document.getElementById("location").scrollIntoView({ 
+        behavior: 'smooth' 
+    });
 }
